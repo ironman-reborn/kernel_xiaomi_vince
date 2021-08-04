@@ -468,21 +468,21 @@ if [ -f version ]; then
   ui_printfile version;
   ui_print " ";
 fi;
-ui_print "===========================================";
-ui_print "|                                         |";
-ui_print "|     |  |   __   °  _|_                  |";
-ui_print "|     |  |  |  |  |   |   |/\  |  \/      |";
-ui_print "|     |__|  |  |  |   |   |    |  /\      |";
-ui_print "|                                         |";
-ui_print "|=========================================|";
-ui_print "|  Device          : Redmi 5 Plus         |";
-ui_print "|  Kernel          : Unitrix-Kernel       |";
-ui_print "|  Linux version   : 4.9.y                |";
-ui_print "|  Compiler        : Proton Clang 13.0.0  |";
-ui_print "|  Maintainer      : GhostMaster69-dev    |";
-ui_print "|=========================================|";
-ui_print "| (AnyKernel3 by osm0sis @xda-developers) |";
-ui_print "===========================================";
+ui_print "==========================================";
+ui_print "|                                        |";
+ui_print "|     |  |   __   °  _|_                 |";
+ui_print "|     |  |  |  |  |   |   |/\  |  \/     |";
+ui_print "|     |__|  |  |  |   |   |    |  /\     |";
+ui_print "|                                        |";
+ui_print "|========================================|";
+ui_print "|  Kernel         : Unitrix-Kernel       |";
+ui_print "|  Device         : Redmi 5 Plus         |";
+ui_print "|  Linux version  : 4.9.y                |";
+ui_print "|  Compiler       : Proton Clang 13.0.0  |";
+ui_print "|  Maintainer     : GhostMaster69-dev    |";
+ui_print "|========================================|";
+ui_print "| AnyKernel3 by osm0sis @xda-developers. |";
+ui_print "==========================================";
 
 setup_env;
 
@@ -490,7 +490,7 @@ do_devicecheck;
 do_versioncheck;
 do_levelcheck;
 
-ui_print "Installing...";
+ui_print "Wait,Installing Unitrix Kernel...";
 CORE=$($BB grep -oE 'ak.*core.sh' anykernel.sh);
 [ -f tools/$CORE ] || $BB ln -s $AKHOME/tools/ak*-core.sh $AKHOME/tools/$CORE;
 PATH="$AKHOME/bin:$PATH" home=$AKHOME $BB ash anykernel.sh $2;
@@ -513,6 +513,6 @@ ui_print "|        \  /      /  \      \  /        |";
 ui_print "|         ||      /----\      ||         |";
 ui_print "|         ||     /      \     ||         |";
 ui_print "|========================================|";
-ui_print "| Unitrix-Kernel successfully installed. |";
+ui_print "| Unitrix Kernel Installed Successfully. |";
 ui_print "==========================================";
 

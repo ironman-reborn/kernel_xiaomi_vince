@@ -13,9 +13,9 @@ export TC_PATH="$HOME/toolchains"
 export ZIP_DIR="$(pwd)/Flasher"
 export IS_MIUI="no"
 export KERNEL_DIR=$(pwd)
-export KBUILD_BUILD_USER="Unitrix-Kernel"
+export KBUILD_BUILD_USER="Tellurium-Kernel"
 export GCC_COMPILE="no"
-export KBUILD_BUILD_HOST="Cosmic-Horizon"
+export KBUILD_BUILD_HOST="Destroyer"
 export KBUILD_COMPILER_STRING="Proton clang version 13.0.0"
 
 #==============================================================
@@ -147,13 +147,7 @@ fi
 cd $ZIP_DIR
 make clean &>/dev/null
 cp $KERN_IMG $ZIP_DIR/zImage
-if [ "$BRANCH" == "stable" ]; then
-	make stable &>/dev/null
-elif [ "$BRANCH" == "beta" ]; then
-	make beta &>/dev/null
-else
-	make test &>/dev/null
-fi
+make stable &>/dev/null
 ZIP=$(echo *.zip)
 tg_pushzip
 

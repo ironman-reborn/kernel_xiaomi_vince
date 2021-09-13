@@ -17,6 +17,7 @@ export KBUILD_BUILD_USER="Tellurium-Kernel"
 export GCC_COMPILE="no"
 export KBUILD_BUILD_HOST="Destroyer"
 export KBUILD_COMPILER_STRING="Proton clang version 13.0.0"
+export KERNEL_USE_CCACHE=1
 
 #==============================================================
 #===================== Function Definition ====================

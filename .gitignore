@@ -126,6 +126,3 @@ Android.bp
 
 # Object directory
 out/
-
-# Ignore Flasher Directory
-Flasher/
